@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -14,10 +15,13 @@ export default {
 			center: true,
 			padding: '2rem',
 			screens: {
-				'2xl': '1400px'
+				'2xl': '1280px'
 			}
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +65,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom TopConta colors
+				orange: {
+					primary: '#FF6B00',
+					secondary: '#FF9C00'
+				},
+				yellow: {
+					highlight: '#FFD84A'
+				},
+				purple: {
+					dark: '#3B1B6F'
 				}
 			},
 			borderRadius: {
@@ -84,11 +99,35 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'tilt': {
+					'0%, 100%': {
+						transform: 'rotate(-1deg)'
+					},
+					'50%': {
+						transform: 'rotate(1deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-up': 'fade-up 0.3s ease-out',
+				'tilt': 'tilt 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-orange': 'linear-gradient(135deg, #FF6B00 0%, #FF9C00 100%)',
+				'gradient-orange-reverse': 'linear-gradient(135deg, #FF9C00 0%, #FF6B00 100%)'
 			}
 		}
 	},
