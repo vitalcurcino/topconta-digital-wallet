@@ -6,32 +6,21 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { title: 'Benefícios', href: '#beneficios' },
-    { title: 'Como Funciona', href: '#como-funciona' },
-    { title: 'Comerciantes', href: '#comerciantes' },
-    { title: 'Depoimentos', href: '#depoimentos' },
+    { title: 'Produtos', href: '#produtos' },
+    { title: 'Quero ser parceiro', href: '#parceiro' },
+    { title: 'Como Baixar', href: '#como-baixar' },
     { title: 'FAQ', href: '#faq' }
   ];
 
-  const handleCTAClick = () => {
-    // Track GTM event
-    if (typeof window !== 'undefined' && (window as any).dataLayer) {
-      (window as any).dataLayer.push({
-        'event': 'cta_download',
-        'cta_location': 'header'
-      });
-    }
-  };
-
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
       <div className="container mx-auto px-4 max-w-[1280px]">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
               src="/assets/logo-topconta.svg" 
-              alt="TopConta - Carteira Digital do Servidor Municipal"
+              alt="TopConta"
               className="h-8 w-auto"
             />
           </div>
@@ -42,7 +31,7 @@ const Header = () => {
               <a
                 key={item.title}
                 href={item.href}
-                className="font-montserrat text-sm font-medium text-gray-700 hover:text-orange-primary transition-colors"
+                className="font-montserrat text-sm text-gray-700 hover:text-orange-primary transition-colors"
               >
                 {item.title}
               </a>
@@ -50,10 +39,7 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <Button 
-            onClick={handleCTAClick}
-            className="hidden md:flex bg-black text-white hover:bg-white hover:text-black border hover:border-black rounded-full px-6 py-2 font-montserrat font-medium transition-all duration-300"
-          >
+          <Button className="hidden md:flex bg-black text-white hover:bg-gray-800 rounded-full px-6 py-2 font-montserrat font-medium">
             Baixar o App
           </Button>
 
@@ -76,16 +62,13 @@ const Header = () => {
                 <a
                   key={item.title}
                   href={item.href}
-                  className="font-montserrat text-sm font-medium text-gray-700"
+                  className="font-montserrat text-sm text-gray-700"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.title}
                 </a>
               ))}
-              <Button 
-                onClick={handleCTAClick}
-                className="bg-black text-white hover:bg-white hover:text-black border hover:border-black rounded-full px-6 py-2 font-montserrat font-medium transition-all duration-300 mt-4"
-              >
+              <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-6 py-2 font-montserrat font-medium mt-4">
                 Baixar o App
               </Button>
             </nav>

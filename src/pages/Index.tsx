@@ -1,15 +1,12 @@
 
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import KeyNumbers from '@/components/KeyNumbers';
 import Benefits from '@/components/Benefits';
-import HumanCare from '@/components/HumanCare';
+import AppControl from '@/components/AppControl';
+import InstantCredit from '@/components/InstantCredit';
 import HowItWorks from '@/components/HowItWorks';
-import WhoWins from '@/components/WhoWins';
-import LimitsSlider from '@/components/LimitsSlider';
-import Testimonials from '@/components/Testimonials';
+import MerchantAdvantages from '@/components/MerchantAdvantages';
 import QRCodeCTA from '@/components/QRCodeCTA';
-import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -17,15 +14,12 @@ const Index = () => {
     <div className="min-h-screen font-montserrat">
       <Header />
       <Hero />
-      <KeyNumbers />
       <Benefits />
-      <HumanCare />
+      <AppControl />
+      <InstantCredit />
       <HowItWorks />
-      <WhoWins />
-      <LimitsSlider />
-      <Testimonials />
+      <MerchantAdvantages />
       <QRCodeCTA />
-      <FAQ />
       <Footer />
     </div>
   );
