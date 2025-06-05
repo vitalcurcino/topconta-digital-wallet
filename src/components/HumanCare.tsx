@@ -19,8 +19,8 @@ const HumanCare = () => {
           <div className="relative animate-fade-up">
             <div className="relative">
               <img 
-                src="/assets/server-photo-01.png" 
-                alt="Servidor municipal sorrindo usando o celular com o app TopConta"
+                src="/lovable-uploads/0fb9463e-ff69-424e-97f8-8b1d6ce78706.png" 
+                alt="Servidora municipal sorrindo usando o celular com o app TopConta"
                 className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
               />
               {/* Yellow curve shape behind */}

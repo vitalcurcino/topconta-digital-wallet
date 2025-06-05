@@ -19,7 +19,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src="/assets/logo-topconta.svg" 
+              src="/lovable-uploads/2c918e9c-b3fd-4d2c-9273-4a46f859dfce.png" 
               alt="TopConta"
               className="h-8 w-auto"
             />

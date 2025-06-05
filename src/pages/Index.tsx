@@ -5,7 +5,9 @@ import Benefits from '@/components/Benefits';
 import AppControl from '@/components/AppControl';
 import InstantCredit from '@/components/InstantCredit';
 import HowItWorks from '@/components/HowItWorks';
+import HumanCare from '@/components/HumanCare';
 import MerchantAdvantages from '@/components/MerchantAdvantages';
+import Testimonials from '@/components/Testimonials';
 import QRCodeCTA from '@/components/QRCodeCTA';
 import Footer from '@/components/Footer';
 
@@ -18,7 +20,9 @@ const Index = () => {
       <AppControl />
       <InstantCredit />
       <HowItWorks />
+      <HumanCare />
       <MerchantAdvantages />
+      <Testimonials />
       <QRCodeCTA />
       <Footer />
     </div>

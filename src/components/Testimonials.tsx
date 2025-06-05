@@ -9,19 +9,19 @@ const Testimonials = () => {
     {
       name: 'Maria Silva',
       role: 'Professora Municipal',
-      photo: '/assets/testimonial-01.jpg',
+      photo: '/lovable-uploads/0fb9463e-ff69-424e-97f8-8b1d6ce78706.png',
       text: 'O TopConta salvou meu mês! Consegui antecipar parte do salário sem juros para uma emergência médica.'
     },
     {
       name: 'João Santos',
       role: 'Fiscal de Obras',
-      photo: '/assets/testimonial-02.jpg',
+      photo: '/lovable-uploads/823eee57-56d3-4b0f-a1ce-8a7b31c175f1.png',
       text: 'Muito prático usar o QR Code nas compras. E o melhor: 45 dias para pagar sem preocupação.'
     },
     {
       name: 'Ana Costa',
       role: 'Enfermeira UBS',
-      photo: '/assets/testimonial-03.jpg',
+      photo: '/lovable-uploads/0fb9463e-ff69-424e-97f8-8b1d6ce78706.png',
       text: 'Finalmente uma solução financeira pensada para nós, servidores. Recomendo para todos os colegas!'
     }
   ];

@@ -4,11 +4,13 @@ const InstantCredit = () => {
     <section className="py-20 bg-gradient-to-r from-orange-primary to-orange-secondary">
       <div className="container mx-auto px-4 max-w-[1280px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Mascote */}
+          {/* Image */}
           <div className="flex justify-center lg:justify-start">
-            <div className="w-64 h-64 bg-white rounded-full flex items-center justify-center">
-              <div className="text-8xl">😊</div>
-            </div>
+            <img 
+              src="/lovable-uploads/823eee57-56d3-4b0f-a1ce-8a7b31c175f1.png" 
+              alt="Servidor municipal feliz usando o celular com o app TopConta"
+              className="w-full max-w-md rounded-2xl shadow-lg"
+            />
           </div>
 
           {/* Content */}

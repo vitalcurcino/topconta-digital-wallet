@@ -15,8 +15,8 @@ const MerchantAdvantages = () => {
           {/* Image */}
           <div className="relative">
             <img 
-              src="/assets/comerciante-parceiro.jpg" 
-              alt="Comerciante parceiro"
+              src="/lovable-uploads/50d3e16a-bcf2-46a2-9612-f7f13c27436c.png" 
+              alt="Comerciante parceiro feliz em sua loja"
               className="w-full rounded-2xl shadow-lg"
             />
           </div>
